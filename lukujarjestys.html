@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect - Lukujärjestys</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="kalenteri.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <span class="logo" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 7v5l3 2"/>
+      </svg>
+    </span>
+    <span class="logo-teksti">CampusConnect</span>
+  </header>
+
+  <main>
+    <h1>Lukujärjestys</h1>
+    <p class="pvm">Viikko 39, koulu ja harjoittelu samassa näkymässä</p>
+
+    <div class="paivavalitsin">
+      <span class="paiva aktiivinen">ma<br>21</span>
+      <span class="paiva">ti<br>22</span>
+      <span class="paiva">ke<br>23</span>
+      <span class="paiva">to<br>24</span>
+      <span class="paiva">pe<br>25</span>
+    </div>
+
+    <ul class="tunnit-lista">
+      <li class="tunti-kortti">
+        <span class="aika">09.00</span>
+        <span class="tiedot">
+          <span class="nimi">Tietokannat</span>
+          <span class="paikka">sali 3104</span>
+        </span>
+      </li>
+      <li class="tunti-kortti peruttu">
+        <span class="aika">10.15</span>
+        <span class="tiedot">
+          <span class="nimi">Ohjelmointi</span>
+          <span class="paikka">sali 3204</span>
+        </span>
+        <span class="merkki merkki-kiireellinen">Peruttu</span>
+      </li>
+      <li class="tunti-kortti">
+        <span class="aika">12.30</span>
+        <span class="tiedot">
+          <span class="nimi">Projektityö</span>
+          <span class="paikka">Teams</span>
+        </span>
+        <span class="merkki merkki-muutos">Muutos</span>
+      </li>
+      <li class="tunti-kortti harjoittelu">
+        <span class="aika">13.00</span>
+        <span class="tiedot">
+          <span class="nimi">Harjoittelu</span>
+          <span class="paikka">Yritys Oy, Helsinki</span>
+        </span>
+      </li>
+    </ul>
+  </main>
+
+  <nav class="alavalikko" aria-label="Päävalikko">
+    <a href="Kalenteri.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11l9-8 9 8"/>
+        <path d="M5 10v10h14V10"/>
+      </svg>
+      <span>Koti</span>
+    </a>
+    <a href="lukujarjestys.html" class="aktiivinen">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="16" rx="2"/>
+        <path d="M16 3v4M8 3v4M3 9h18"/>
+      </svg>
+      <span>Lukujärjestys</span>
+    </a>
+    <a href="ilmoitukset.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+      </svg>
+      <span>Ilmoitukset</span>
+    </a>
+  </nav>
+
+</body>
+</html>

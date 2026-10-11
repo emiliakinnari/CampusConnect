@@ -1,0 +1,304 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #F3F7FA;
+  color: #14212B;
+  margin: 0;
+  padding: 0 0 90px 0;
+}
+
+/* Ylapalkki */
+.topbar {
+  background-color: #0B2F4A;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  background-color: #0079C2;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-teksti {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+main {
+  padding: 20px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 4px 0 2px;
+}
+
+.pvm {
+  color: #4A5C6A;
+  font-size: 14px;
+  margin: 0 0 20px;
+}
+
+/* Kortit */
+.kortti {
+  background-color: white;
+  border: 1px solid #C8D5DF;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.kortti.kiireellinen {
+  border: 2px solid #B42318;
+}
+
+.kortti h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+/* Merkit (pillit) */
+.merkki {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.merkki-kiireellinen {
+  color: #B42318;
+  border: 1.5px solid #B42318;
+  background-color: white;
+}
+
+.merkki-muutos {
+  color: #14212B;
+  background-color: #FFB81C;
+}
+
+.rivi-otsikko {
+  font-weight: 600;
+  margin: 2px 0;
+}
+
+.rivi-kuvaus {
+  color: #4A5C6A;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Paivan lukujarjestys -lista (etusivu) */
+.tunnit {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tunnit li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-top: 1px solid #E5EBF0;
+}
+
+.tunnit li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.aika {
+  font-weight: 700;
+  width: 50px;
+  flex-shrink: 0;
+}
+
+.tiedot {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.nimi {
+  font-weight: 600;
+}
+
+.paikka {
+  color: #4A5C6A;
+  font-size: 13px;
+}
+
+.tunnit li.peruttu .nimi {
+  text-decoration: line-through;
+  color: #4A5C6A;
+}
+
+.tunnit li .merkki {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+/* Painike */
+.painike {
+  display: block;
+  text-align: center;
+  background-color: #0079C2;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.painike:hover,
+.painike:focus {
+  background-color: #005A94;
+}
+
+/* Alavalikko */
+.alavalikko {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #C8D5DF;
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.alavalikko a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 0 8px;
+  color: #4A5C6A;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.alavalikko a.aktiivinen {
+  color: #0079C2;
+}
+
+/* Paivavalitsin (Lukujarjestys-sivu) */
+.paivavalitsin {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.paiva {
+  flex: 1;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #C8D5DF;
+  border-radius: 10px;
+  padding: 8px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4A5C6A;
+  line-height: 1.3;
+}
+
+.paiva.aktiivinen {
+  background-color: #0079C2;
+  border-color: #0079C2;
+  color: white;
+}
+
+/* Yksittaiset tuntikortit (Lukujarjestys-sivu) */
+.tunnit-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tunti-kortti {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: white;
+  border: 1px solid #C8D5DF;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.tunti-kortti .merkki {
+  margin: 0 0 0 auto;
+  white-space: nowrap;
+}
+
+.tunti-kortti.peruttu {
+  background-color: #FFF7E6;
+  border-left: 4px solid #FFB81C;
+}
+
+.tunti-kortti.peruttu .nimi {
+  text-decoration: line-through;
+  color: #4A5C6A;
+}
+
+.tunti-kortti.harjoittelu {
+  background-color: #EAF3FB;
+}
+
+/* Suodattimet (Ilmoitukset-sivu) */
+.suodattimet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.suodatin {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid #C8D5DF;
+  color: #14212B;
+  background-color: white;
+}
+
+.suodatin.aktiivinen {
+  background-color: #0079C2;
+  border-color: #0079C2;
+  color: white;
+}
+
+/* Lisamerkit (Ilmoitukset-sivu) */
+.merkki-harjoittelu {
+  color: #0079C2;
+  border: 1.5px solid #0079C2;
+  background-color: white;
+}
+
+.merkki-tiedoksi {
+  color: #4A5C6A;
+  border: 1.5px solid #C8D5DF;
+  background-color: white;
+}
